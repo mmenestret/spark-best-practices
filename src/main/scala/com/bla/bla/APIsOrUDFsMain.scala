@@ -3,6 +3,7 @@ package com.bla.bla
 import com.bla.bla.features.ClientsFeatures
 import com.bla.bla.utils.Generators
 import org.apache.spark.sql.functions._
+import com.bla.bla.utils.SparkSession._
 
 object APIsOrUDFsMain {
 
