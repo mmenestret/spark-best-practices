@@ -20,10 +20,7 @@ object OrdersFeatures {
 
   def featuresGroupedByOrderId(df: DataFrame): DataFrame = {
     df.groupBy(col("clientId"))
-      .agg(
-        avg(col("price")).as("averagePrice"),
-        avg(col("numberOfPieces")).as("averageNbOfPieces")
-      )
+        .avg("price", "numberOfPieces")
   }
 
   /**
