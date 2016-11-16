@@ -23,6 +23,15 @@ object OrdersFeatures {
         .avg("price", "numberOfPieces")
   }
 
+  // add an helper method to rename aggregated cols
+  def renamed(df: DataFrame) : DataFrame = {
+    val AVG = "avg\\((.*)\\)".r
+    df.columns.foldLeft(df)((acc, name) => name match {
+      case AVG(c) => acc.withColumnRenamed(name, s"avg$c")
+      case _ => acc }
+    )
+  }
+
   /**
     * The idea is to separate the functionnal parts in different functions with less concern about technical stuff
     *
