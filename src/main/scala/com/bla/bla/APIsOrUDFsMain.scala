@@ -1,8 +1,7 @@
-package com.axa.dil
+package com.bla.bla
 
-import com.axa.dil.features.ClientsFeatures
-import com.axa.dil.utils.Generators
-import com.axa.dil.utils.SparkSession._
+import com.bla.bla.features.ClientsFeatures
+import com.bla.bla.utils.Generators
 import org.apache.spark.sql.functions._
 
 object APIsOrUDFsMain {

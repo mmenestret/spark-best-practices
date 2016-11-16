@@ -1,4 +1,4 @@
-package com.axa.dil.utils
+package com.bla.bla.utils
 
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.{SparkConf, SparkContext}

@@ -1,8 +1,7 @@
-package com.axa.dil
+package com.bla.bla
 
-import com.axa.dil.features.OrdersFeatures
-import com.axa.dil.utils.Generators
-import com.axa.dil.utils.SparkSession._
+import com.bla.bla.features.OrdersFeatures
+import com.bla.bla.utils.{Generators, SparkSession}
 import org.apache.spark.sql.DataFrame
 
 object CodeOrganisationMain {
