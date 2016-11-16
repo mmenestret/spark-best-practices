@@ -1,9 +1,9 @@
-package com.axa.dil.utils
+package com.bla.bla.utils
 
-
-import com.axa.dil.utils.Models.{Client, Order}
+import Models.{Client, Order}
 import org.apache.spark.rdd.RDD
-import com.axa.dil.utils.SparkSession._
+import SparkSession._
+import com.bla.bla.utils.Models.{Client, Order}
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, Row}
 

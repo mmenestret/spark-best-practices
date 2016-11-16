@@ -1,4 +1,4 @@
-package com.axa.dil.utils
+package com.bla.bla.utils
 
 /**
   * Created by martin on 15/11/2016.

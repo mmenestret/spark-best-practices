@@ -1,6 +1,6 @@
-import com.axa.dil.features.ClientsFeatures
-import com.axa.dil.utils.Models.Client
-import com.axa.dil.utils.SparkSession._
+import Models.Client
+import com.bla.bla.features.ClientsFeatures
+import com.bla.bla.utils.{Models, SparkSession}
 import org.scalatest._
 import org.apache.spark.sql.functions._
 

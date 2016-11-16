@@ -1,9 +1,9 @@
-package com.axa.dil
+package com.bla.bla
 
-import com.axa.dil.features.ClientsFeatures
-import com.axa.dil.utils.Generators
-import com.axa.dil.utils.Models.{Client, ClientWithAdultTag}
-import com.axa.dil.utils.SparkSession._
+import Models.{Client, ClientWithAdultTag}
+import com.bla.bla.features.ClientsFeatures
+import com.bla.bla.utils.{Generators, Models, SparkSession}
+import com.bla.bla.utils.Models.{Client, ClientWithAdultTag}
 import org.apache.spark.rdd.RDD
 
 object DataFrameOrRDDMain {
