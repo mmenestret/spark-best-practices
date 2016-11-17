@@ -1,7 +1,5 @@
 package com.bla.bla.features
 
-import Models.{Client, ClientWithAdultTag}
-import com.bla.bla.utils.Models
 import com.bla.bla.utils.Models.{Client, ClientWithAdultTag}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.DataFrame
