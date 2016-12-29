@@ -20,10 +20,16 @@ object OrdersFeatures {
 
   def featuresGroupedByOrderId(df: DataFrame): DataFrame = {
     df.groupBy(col("clientId"))
-      .agg(
-        avg(col("price")).as("averagePrice"),
-        avg(col("numberOfPieces")).as("averageNbOfPieces")
-      )
+        .avg("price", "numberOfPieces")
+  }
+
+  // add an helper method to rename aggregated cols
+  def renamed(df: DataFrame) : DataFrame = {
+    val AVG = "avg\\((.*)\\)".r
+    df.columns.foldLeft(df)((acc, name) => name match {
+      case AVG(c) => acc.withColumnRenamed(name, s"avg$c")
+      case _ => acc }
+    )
   }
 
   /**
