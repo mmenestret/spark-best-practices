@@ -1,8 +1,9 @@
-import Models.Client
 import com.bla.bla.features.ClientsFeatures
+import com.bla.bla.utils.Models.Client
 import com.bla.bla.utils.{Models, SparkSession}
 import org.scalatest._
 import org.apache.spark.sql.functions._
+import SparkSession._
 
 class APIsOrUDFsMainSpec extends FlatSpec with Matchers {
 

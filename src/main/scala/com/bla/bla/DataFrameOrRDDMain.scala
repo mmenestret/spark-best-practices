@@ -1,10 +1,10 @@
 package com.bla.bla
 
-import Models.{Client, ClientWithAdultTag}
 import com.bla.bla.features.ClientsFeatures
-import com.bla.bla.utils.{Generators, Models, SparkSession}
+import com.bla.bla.utils.Generators
 import com.bla.bla.utils.Models.{Client, ClientWithAdultTag}
 import org.apache.spark.rdd.RDD
+import com.bla.bla.utils.SparkSession._
 
 object DataFrameOrRDDMain {
 
